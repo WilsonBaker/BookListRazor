@@ -2,3 +2,4 @@
 bin/Debug/netcoreapp3.1/BookListRazor.deps.json
 bin/Debug
 obj/Debug
+obj/Debug/netcoreapp3.1/BookListRazor.dll
