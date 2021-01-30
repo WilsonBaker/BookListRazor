@@ -374,3 +374,7 @@ C:\Users\Wilso\source\repos\BookListRazor\BookListRazor\bin\Debug\netcoreapp3.1\
 C:\Users\Wilso\source\repos\BookListRazor\BookListRazor\bin\Debug\netcoreapp3.1\runtimes\unix\lib\netcoreapp2.0\System.Runtime.Caching.dll
 C:\Users\Wilso\source\repos\BookListRazor\BookListRazor\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp2.0\System.Runtime.Caching.dll
 C:\Users\Wilso\source\repos\BookListRazor\BookListRazor\bin\Debug\netcoreapp3.1\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
+C:\Users\Wilso\source\repos\BookListRazor\BookListRazor\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.Design.dll
+C:\Users\Wilso\source\repos\BookListRazor\BookListRazor\obj\Debug\netcoreapp3.1\BookListRazor.csproj.CoreCompileInputs.cache
+C:\Users\Wilso\source\repos\BookListRazor\BookListRazor\obj\Debug\netcoreapp3.1\BookListRazor.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\Wilso\source\repos\BookListRazor\BookListRazor\obj\Debug\netcoreapp3.1\BookListRazor.MvcApplicationPartsAssemblyInfo.cache
