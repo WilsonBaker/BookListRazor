@@ -27,24 +27,31 @@
                             <label asp-for="Books.FirstOrDefault().Author"></label>
                         </th>
                         <th>
+                            @*@Html.DisplayNameFor(m=>m.Books.FirstOrDefault().Author)  This is the old html helper way of doing it without tag-helpers*@
+                            <label asp-for="Books.FirstOrDefault().ISBN"></label>
+                        </th>
+                        <th>
 
                         </th>
                     </tr>
                     @foreach (var item in Model.Books)
                     {
-                        <tr>
-                            @*Have to use Html helper as there is no tag helper for DisplayFor()*@
-                            <td>
-                                @Html.DisplayFor(m => item.Name)
-                            </td>
-                            <td>
-                                @Html.DisplayFor(m => item.Author)
-                            </td>
-                            <td>
-                                <button class="btn btn-danger btn-sm">Delete</button>
-                                <a class="btn btn-success btn-sm text-white">Edit</a>
-                            </td>
-                        </tr>
+                <tr>
+                    @*Have to use Html helper as there is no tag helper for DisplayFor()*@
+                    <td>
+                        @Html.DisplayFor(m => item.Name)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(m => item.Author)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(m => item.ISBN)
+                    </td>
+                    <td>
+                        <button class="btn btn-danger btn-sm">Delete</button>
+                        <a class="btn btn-success btn-sm text-white">Edit</a>
+                    </td>
+                </tr>
                     }
                 </table>
             }
