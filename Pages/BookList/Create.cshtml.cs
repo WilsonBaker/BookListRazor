@@ -26,14 +26,19 @@ namespace BookListRazor.Pages.BookList
 
         public async Task<IActionResult> OnPost()
         {
+            //ModelState checks if required fields are filled in such as Name in this case.
             if(ModelState.IsValid)
             {
+                //Add Book to async queue
                 await _db.Book.AddAsync(Book);
+                //Update database using async queue
                 await _db.SaveChangesAsync();
+                //Return to BookList page after successfull creation
                 return RedirectToPage("Index");
             }
             else
             {
+                //If failed to validate ModelState then stay on same page
                 return Page();
             }
         }
