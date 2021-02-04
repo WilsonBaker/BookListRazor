@@ -12,9 +12,36 @@
 
     <div class="col-12 border p-3 mt-3">
         <form method="post">
+            @*Check if the get we made for our Books razor page returns any results from the database*@
             @if(Model.Books.Count() > 0)
             {
+                <table class="table table-striped border">
+                    <tr class="table-secondary">
+                        <th>
+                            @*This is the new way to do it with asp tag helpers. Much easier and concise.*@
+                            <label asp-for="Books.FirstOrDefault().Name"></label>
+                        </th>
+                        <th>
+                            @*@Html.DisplayNameFor(m=>m.Books.FirstOrDefault().Author)  This is the old html helper way of doing it without tag-helpers*@
+                            <label asp-for="Books.FirstOrDefault().Author"></label>
+                        </th>
+                        <th>
 
+                        </th>
+                    </tr>
+                    @foreach(var item in Model.Books)
+                    {
+                <tr>
+                    @*Have to use Html helper as there is no tag helper for DisplayFor()*@
+                    <td>
+                        @Html.DisplayFor(m => item.Name)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(m => item.Author)
+                    </td>
+                </tr>
+                    }
+                </table>
             }
             else
             {
