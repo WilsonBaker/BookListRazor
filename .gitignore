@@ -1,6 +1,4 @@
 
-bin/Debug/netcoreapp3.1/BookListRazor.deps.json
-bin/Debug/*
-obj/Debug/*
-obj/Debug/netcoreapp3.1/BookListRazor.dll
-obj/Debug/netcoreapp3.1/BookListRazor.csprojAssemblyReference.cache
+bin
+obj
+config
