@@ -13,7 +13,7 @@
     <div class="col-12 border p-3 mt-3">
         <form method="post">
             @*Check if the get we made for our Books razor page returns any results from the database*@
-            @if(Model.Books.Count() > 0)
+            @if (Model.Books.Count() > 0)
             {
                 <table class="table table-striped border">
                     <tr class="table-secondary">
@@ -29,17 +29,17 @@
 
                         </th>
                     </tr>
-                    @foreach(var item in Model.Books)
+                    @foreach (var item in Model.Books)
                     {
-                <tr>
-                    @*Have to use Html helper as there is no tag helper for DisplayFor()*@
-                    <td>
-                        @Html.DisplayFor(m => item.Name)
-                    </td>
-                    <td>
-                        @Html.DisplayFor(m => item.Author)
-                    </td>
-                </tr>
+                        <tr>
+                            @*Have to use Html helper as there is no tag helper for DisplayFor()*@
+                            <td>
+                                @Html.DisplayFor(m => item.Name)
+                            </td>
+                            <td>
+                                @Html.DisplayFor(m => item.Author)
+                            </td>
+                        </tr>
                     }
                 </table>
             }
