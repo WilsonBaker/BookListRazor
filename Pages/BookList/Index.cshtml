@@ -7,7 +7,8 @@
         <h2 class="text-info">Book List</h2>
     </div>
     <div class="col-3">
-        <a class="btn btn-info form-control text-white">Create New Book</a>
+        @*Use asp tag helper to redirect to Create page when pressing the button*@
+        <a asp-page="Create" class="btn btn-info form-control text-white">Create New Book</a>
     </div>
 
     <div class="col-12 border p-3 mt-3">
@@ -41,7 +42,7 @@
                             </td>
                             <td>
                                 <button class="btn btn-danger btn-sm">Delete</button>
-                                <a class="btn btn-success btn-sm">Edit</a>
+                                <a class="btn btn-success btn-sm text-white">Edit</a>
                             </td>
                         </tr>
                     }
