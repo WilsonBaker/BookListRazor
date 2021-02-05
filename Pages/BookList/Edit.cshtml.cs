@@ -33,6 +33,14 @@ namespace BookListRazor.Pages.BookList
                 BookFromDb.Name = Book.Name;
                 BookFromDb.Author = Book.Author;
                 BookFromDb.ISBN = Book.ISBN;
+
+                await _db.SaveChangesAsync();
+
+                return RedirectToPage("Index");
+            }
+            else
+            {
+                return RedirectToPage();
             }
         }
     }
